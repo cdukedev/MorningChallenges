@@ -23,24 +23,24 @@
 // array to loop
 //need a function
 
-const loopArray = (arr, direction, steps) => {
-  let newArray = arr;
-  console.log(newArray);
-  console.log(steps);
-  if (direction === "right") {
-    // for (let i = 0; i < steps; i++) {
-    //   const lastIndex = arr.pop(arr.length - 1);
-    //   newArray.shift(lastIndex);
-  } else {
-    for (let i = 0; i < steps; i++) {
-      newArray = arr.push(arr.shift());
-      console.log(newArray);
-    }
-  }
-  console.log(newArray);
-};
+// const loopArray = (arr, direction, steps) => {
+//   let newArray = arr;
+//   console.log(newArray);
+//   console.log(steps);
+//   if (direction === "right") {
+//     for (let i = 0; i < steps; i++) {
+//       const lastIndex = arr.pop(arr.length - 1);
+//       newArray.shift(lastIndex);
+//   } else {
+//     for (let i = 0; i < steps; i++) {
+//       newArray = arr.push(arr.shift());
+//       console.log(newArray);
+//     }
+//   }
+//   console.log(newArray);
+// };
 
-loopArray([1, 5, 87, 45, 8, 8], "left", 2);
+// loopArray([1, 5, 87, 45, 8, 8], "left", 2);
 //intended output [87, 45, 8, 8, 1, 5]
 // loopArray([1, 5, 87, 45, 8, 8], "right", 2);
 //intended output [8, 8, 1, 5, 87, 45]
