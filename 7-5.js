@@ -18,10 +18,12 @@ const doubleUp = (str) => {
 
 console.log(doubleUp(str));
 
-
 //redo doubleUp with map and split
 const doubleUp2 = (str) => {
-    return str.split("").map((char) => char + char).join("");
-
+  return str
+    .split("")
+    .map((char) => char + char)
+    .join("");
+};
 
 //expected output: "HHeelloo  WWoorrlldd"
