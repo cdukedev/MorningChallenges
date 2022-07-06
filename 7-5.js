@@ -26,4 +26,7 @@ const doubleUp2 = (str) => {
     .join("");
 };
 
+console.log(str.split(""));
+
+
 //expected output: "HHeelloo  WWoorrlldd"
