@@ -8,8 +8,37 @@
 const orderedArray = [
   1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14, 15, 17, 18, 19, 20,
 ];
-
-
+//create a function to find the target in the array usign binary search
+const binarySearch = (arr, target) => {
+  //set start and end of array
+  let start = 0;
+  let end = arr.length - 1;
+  //while start is less than or equal to end
+  while (start <= end) {
+    //set midpoint to start + end divided by 2
+    let midpoint = Math.floor((start + end) / 2);
+    //if target is equal to midpoint
+    if (target === arr[midpoint]) {
+      //return midpoint
+      return midpoint;
+    }
+    //if target is less than midpoint
+    if (target < arr[midpoint]) {
+      //set end to midpoint - 1
+      end = midpoint - 1;
+    }
+    //if target is greater than midpoint
+    if (target > arr[midpoint]) {
+      //set start to midpoint + 1
+      start = midpoint + 1;
+    }
+  }
+};
+//test the function
+console.log(binarySearch(orderedArray, 1));
+console.log(binarySearch(orderedArray, 2));
+console.log(binarySearch(orderedArray, 9));
+console.log(binarySearch(orderedArray, 4));
 
 //ORIGINAL ANSWER
 //create a function to find the target in the array usign binary search
