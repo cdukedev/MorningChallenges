@@ -23,23 +23,22 @@ const binarySearch = (arr, target) => {
       return midpoint;
     }
     //if target is less than midpoint
-    if (target < arr[midpoint]) {
+    else if (target < arr[midpoint]) {
       //set end to midpoint - 1
       end = midpoint - 1;
     }
     //if target is greater than midpoint
-    if (target > arr[midpoint]) {
+    else if (target > arr[midpoint]) {
       //set start to midpoint + 1
       start = midpoint + 1;
     }
   }
-};
-//test the function
+  return -1;
+}; //test the function
 console.log(binarySearch(orderedArray, 1));
 console.log(binarySearch(orderedArray, 2));
 console.log(binarySearch(orderedArray, 9));
 console.log(binarySearch(orderedArray, 4));
-
 //ORIGINAL ANSWER
 //create a function to find the target in the array usign binary search
 // const binarySearch = (arr, target) => {
