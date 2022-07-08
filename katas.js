@@ -34,4 +34,3 @@
 // }
 
 // console.log(makeNegative(-42));
-
