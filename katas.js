@@ -12,26 +12,26 @@
 // console.log(stringToNumber("-7"), -7);
 
 //kata2
-//my solution
-function makeNegative(num) {
-  if (num < 0) {
-    return num;
-  } else {
-    return -num;
-  }
-}
+// //my solution
+// function makeNegative(num) {
+//   if (num < 0) {
+//     return num;
+//   } else {
+//     return -num;
+//   }
+// }
 
-//higher voted solutions
+// //higher voted solutions
 
-// as ternary operator
-function makeNegative(num) {
-  return num < 0 ? num : -num;
-}
+// // as ternary operator
+// function makeNegative(num) {
+//   return num < 0 ? num : -num;
+// }
 
-//using Math.abs
-function makeNegative(num) {
-  return -Math.abs(num);
-}
+// //using Math.abs
+// function makeNegative(num) {
+//   return -Math.abs(num);
+// }
 
-console.log(makeNegative(-42));
+// console.log(makeNegative(-42));
 
