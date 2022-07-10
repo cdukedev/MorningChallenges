@@ -34,3 +34,18 @@
 // }
 
 // console.log(makeNegative(-42));
+
+
+
+
+// trying to make a random pair generator
+const array = ["corey", "j", "za", "jor", "mar", "hug", "will", "chrs"];
+// pick 4 random pair out of 8 and remove chosen pair from the array
+const randomPair = () => {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  const randomPair = array[randomIndex];
+  array.splice(randomIndex, 1);
+  return randomPair;
+};
+
+console.log(randomPair(array));
