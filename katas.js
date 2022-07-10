@@ -35,9 +35,6 @@
 
 // console.log(makeNegative(-42));
 
-
-
-
 // // trying to make a random pair generator
 // const array = ["corey", "j", "za", "jor", "mar", "hug", "will", "chrs"];
 // // pick 4 random pair out of 8 and remove chosen pair from the array
@@ -49,9 +46,6 @@
 // };
 
 // console.log(randomPair(array));
-
-
-
 
 //kata3
 
@@ -72,3 +66,41 @@
 //   }
 //   return reversed;
 // }
+
+//Kata4
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     let smallestInteger = args[0];
+//     for (let i = 1; i < args.length; i++) {
+//       if (args[i] < smallestInteger) {
+//         smallestInteger = args[i];
+//       }
+//     }
+//     return smallestInteger;
+//   }
+// }
+
+// another solution
+// function findSmallestInt(args) {
+//   return Math.min(...args);
+// }
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+// sort solution and return the first element
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    args.sort(function(a, b) {
+    return a - b; } )
+    return args[0];
+  }
+}
+
+
+console.log(
+  new SmallestIntegerFinder().findSmallestInt([78, 56, 232, 12, 8]),
+  8
+);
