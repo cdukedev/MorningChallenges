@@ -35,7 +35,7 @@ alphabetScoring = {
 };
 
 const input1 = "zebra apple"; //expected output: apple  //zebra 52 and apple
-const input2 = "hello world this is a test that should work";
+const input2 = "hello world this is a test that shouldaa shouldb work";
 const input3 = "jk lol rofl np wtf roflmao";
 
 // add a scoring function
@@ -65,5 +65,32 @@ function scoreWords(sentence) {
 
 //output: highest scoring word
 console.log(scoreWords(input1)); // apple
-console.log(scoreWords(input2)); // should
+console.log(scoreWords(input2)); // shouldaa
 console.log(scoreWords(input3)); // roflmao
+
+//WITH ONLY ONE LOOP
+// function scoreWords(sentence){
+//     let highScore = 0;
+//     let highScoreWord = "";
+//     let score = 0;
+//     let word = "";
+//     index = 0;
+//     for(let letter of sentence){
+//       index++;
+//       if(letter === " " || sentence.length === index){
+//         if(score > highScore){
+//           highScore = score;
+//           highScoreWord = word;
+//           score = 0;
+//           word = "";
+//         }else{
+//           score = 0;
+//           word = "";
+//         }
+//       }else{
+//       score += letters.indexOf(letter) + 1;
+//       word += letter;
+//       }
+//     }
+//     return highScoreWord;
+//   }
