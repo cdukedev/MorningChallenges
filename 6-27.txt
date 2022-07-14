@@ -3,8 +3,8 @@ Create a function that takes a string as a parameter and alternates the casing o
 intended input
 Hello World!
 
-output
-hELLO wORLD!
+open test
+
 
 const words = "Hello World!";
 
@@ -22,3 +22,4 @@ const alternateCase = (words) => {
 }
 
 const alternatedWord = alternateCase(words);
+asd
