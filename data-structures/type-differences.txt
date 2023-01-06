@@ -1,0 +1,14 @@
+Q: What is the difference between a stack and a queue?
+A: A stack is a LIFO data structure, while a queue is a FIFO data structure.
+
+Q: What is the difference between a linked list and an array?
+A: A linked list is a data structure that contains a series of nodes, while an array is a data structure that contains a series of elements.
+
+Q: What is the difference between a binary tree and a binary search tree?
+A: A binary tree is a data structure that contains a series of nodes, while a binary search tree is a data structure that contains a series of nodes that are sorted in a specific way.
+
+Q: What is the difference between a hash table and a hash map?
+A: A hash table is a data structure that contains a series of key-value pairs, while a hash map is a data structure that contains a series of key-value pairs.
+
+Q: What is the difference between a heap and a priority queue?
+A: A heap is a data structure that contains a series of nodes, while a priority queue is a data structure that contains a series of nodes that are sorted in a specific way.

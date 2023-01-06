@@ -1,0 +1,85 @@
+Sections:
+1. What is recursion? 
+2. Pros and cons of recursion 
+3. The Call Stack
+
+
+What is recursion?
+Recursion is a concept in which a function calls itself repeatedly until a certain condition is met. It can be a useful technique for solving problems that can be divided into smaller subproblems, but it can be challenging to understand at first.
+
+Here are a few tips that might help you understand recursion better:
+
+    --Start by understanding the base case: In a recursive function, there must be a base case, or a stopping point, to terminate the recursion. Understanding this base case is crucial to understanding how the recursion works.
+
+    --Think about the function's inputs and outputs: It can be helpful to think about the inputs and outputs of the function at each recursive step. This can help you understand how the function is breaking down the problem into smaller subproblems.
+
+    --Trace the function's execution: One way to understand how a recursive function works is to trace its execution by hand. This can help you see how the function is making progress towards the base case and how it is using the results of each recursive call to solve the larger problem.
+
+    --Use examples to help you understand: It can be helpful to work through some simple examples of recursive functions to get a feel for how they work. This can help you build up your intuition for how recursion works.
+
+
+
+Pros and cons of recursion 
+PRO
+1.Bridges the gap between elegance and complexity
+2.Reduces the need for complex loops and auxiliary data
+structures
+3.Can reduce time complexity easily with memoization
+4.Works really well with recursive structures like tress and
+graphs
+
+CONS
+1.Slowness due to CPU overhead
+2.Can lead to out of memory errors / stack overflow
+exceptions
+3.Can be unnecessarily complex if poorly constructed
+
+Pros of recursion:
+
+1. It can be a simple and elegant solution to certain problems, especially those that can be divided into smaller subproblems.
+
+2. It can be easier to read and understand recursive code than code that uses complex looping structures.
+
+3. It can be more efficient than iteration for certain types of problems, such as those involving recursive data structures.
+
+Cons of recursion:
+
+1. It can be less efficient than iteration for problems that do not involve recursive data structures.
+
+2. It can be more difficult to debug and maintain recursive code, especially if the recursion is not implemented correctly.
+
+3. It can be more difficult for some people to understand recursive code, especially if they are not familiar with the concept of recursion.
+
+4. It can consume more memory, as each recursive call requires its own stack frame. This can be a problem for large inputs or for recursive algorithms that make many recursive calls.
+
+
+
+
+
+The Call Stack
+Analogy 
+You start by checking emails then 
+boss calls you to join a meeting
+but first needs you to impress investors with your knowledge
+then before that needs you to fix broken code first. 
+This would be considered recursion.
+
+public String A() {
+return "hello
+" + B();
+}
+public String B() {
+return
+"my
+" + C();
+}
+public String C() {
+return
+"friends.
+}
+
+ Infinite Recursion
+public static int A() {
+    return A();
+}
+A() will continually call itself until the stack overflows.
